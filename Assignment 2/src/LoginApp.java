@@ -53,7 +53,7 @@ public class LoginApp extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             String email = emailField.getText();
-            String password = new String(passwordField.getPassword()); // Password is ignored for validation
+
 
             String userName = authenticateUser(email);
             if (userName != null) {
