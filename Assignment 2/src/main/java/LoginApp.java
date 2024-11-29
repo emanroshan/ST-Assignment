@@ -74,7 +74,7 @@ public class LoginApp extends JFrame {
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {
-                userName = rs.getString("name"); // Column names are case-sensitive
+                userName = rs.getString("name");
             }
             rs.close();
             stmt.close();
