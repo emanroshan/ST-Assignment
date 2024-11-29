@@ -59,7 +59,7 @@ public class LoginApp extends JFrame {
             if (userName != null) {
                 JOptionPane.showMessageDialog(null, "Welcome, " + userName + "!", "Login Successful", JOptionPane.INFORMATION_MESSAGE);
             } else {
-                JOptionPane.showMessageDialog(null, "User not found.", "Login Failed", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "User not found!!!", "Login Failed", JOptionPane.ERROR_MESSAGE);
             }
         }
     }
@@ -74,7 +74,7 @@ public class LoginApp extends JFrame {
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {
-                userName = rs.getString("name"); // Column names are case-sensitive
+                userName = rs.getString("name");
             }
             rs.close();
             stmt.close();
