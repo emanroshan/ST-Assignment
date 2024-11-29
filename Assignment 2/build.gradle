@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // MySQL Connector dependency
+    implementation 'mysql:mysql-connector-java:8.0.34'
+
+    // JUnit 5 dependency for testing
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+}
+
+test {
+    useJUnitPlatform()
+}
