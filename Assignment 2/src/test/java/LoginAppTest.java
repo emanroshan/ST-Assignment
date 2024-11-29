@@ -59,7 +59,7 @@ class LoginAppTest {
 
     }
 
-    // Test 3: Empty Email Field Test
+
     @Test
     void testEmptyEmailField() {
         String emptyEmail = "";
